@@ -19,7 +19,6 @@ RUN apk update --no-cache && apk add --no-cache --update curl python3 bash git o
   && cp -pr google-cloud-sdk / \
   && rm -f /google-cloud-sdk/bin/anthoscli \
   && gcloud config set disable_usage_reporting true \
-  && gcloud components update --quiet \
   && gcloud components install --quiet kubectl \
   && rm -rf /build
 
