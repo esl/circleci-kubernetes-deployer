@@ -1,4 +1,4 @@
-FROM docker:19.03.11
+FROM docker:20.10.1
 
 ARG helm_version=v3.3.0
 ARG helm_hash=ff4ac230b73a15d66770a65a037b07e08ccbce6833fbd03a5b84f06464efea45
