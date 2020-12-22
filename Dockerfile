@@ -26,3 +26,6 @@ RUN curl -Lo /usr/bin/tk https://github.com/grafana/tanka/releases/latest/downlo
   && curl -Lo /usr/bin/jb https://github.com/jsonnet-bundler/jsonnet-bundler/releases/latest/download/jb-linux-amd64 \
   && chmod +x /usr/bin/tk \
   && chmod +x /usr/bin/jb
+  
+  
+RUN mkdir -p ~/.docker/cli-plugins && curl -L https://github.com/docker/buildx/releases/download/v0.5.1/buildx-v0.5.1.linux-amd64 -o ~/.docker/cli-plugins/docker-buildx && chmod a+x ~/.docker/cli-plugins/docker-buildx
